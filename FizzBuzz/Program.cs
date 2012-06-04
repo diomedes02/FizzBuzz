@@ -66,7 +66,8 @@ namespace FizzBuzz
         /// <param name="input4">string input 4 ("Buzz")</param>
         private static void PrintFizzBuzzResults(int input1, int input2, string input3 = "Fizz", string input4 = "Buzz")
         {
-            List<string> outList = PrintDigits.GetDigits(input1, input2, input3, input4);
+            PrintDigits pd = new PrintDigits();
+            List<string> outList = pd.GetDigits(input1, input2, input3, input4);
 
             foreach (var s in outList)
             {

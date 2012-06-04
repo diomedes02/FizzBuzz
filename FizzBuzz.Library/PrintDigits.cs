@@ -5,17 +5,20 @@ using System.Text;
 
 namespace FizzBuzz.Library
 {
-    public static class PrintDigits
+    public class PrintDigits
     {
+        public PrintDigits() { }
+
         /// <summary>
-        /// 
+        /// Iterates through start and end integers and returns the iterations to a list of strings.
+        /// Outputs the first string parameter on iterations divisible by 3 and the second on iterations divisible by 5.
         /// </summary>
         /// <param name="start">Beginning integer</param>
         /// <param name="end">Ending integer</param>
         /// <param name="strDiv3">String to print when the current interation number is divisible by 3.</param>
         /// <param name="strDiv5">String to print when the current interation number is divisible by 5.</param>
         /// <returns></returns>
-        public static List<string> GetDigits(int start, int end, string strDiv3, string strDiv5)
+        public List<string> GetDigits(int start, int end, string strDiv3, string strDiv5)
         {
             List<string> lst = new List<string>();
 
